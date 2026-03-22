@@ -367,8 +367,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p style={{ fontSize: 10, letterSpacing: "0.12em", color: "rgba(255,255,255,0.35)", fontFamily: "'DM Sans',sans-serif", marginBottom: 3 }}>PHONE</p>
-                    <a href="tel:08460550391" style={{ fontWeight: 700, fontSize: "clamp(0.92rem,2.8vw,1.05rem)", color: "#fff", textDecoration: "none" }}>
-                      08460550391
+                    <a href="tel:9817717665" style={{ fontWeight: 700, fontSize: "clamp(0.92rem,2.8vw,1.05rem)", color: "#fff", textDecoration: "none" }}>
+                      9817717665
                     </a>
                     <p style={{ fontSize: "0.78rem", color: "rgba(255,255,255,0.35)", fontFamily: "'DM Sans',sans-serif", marginTop: 2 }}>Mon – Sat, 8 AM – 8 PM</p>
                   </div>
@@ -607,7 +607,7 @@ export default function ContactPage() {
           <div className="reveal-up map-container" style={{ height: "clamp(220px,50vw,360px)" }}>
             <iframe
               title="AM Institute of Excellence"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.0!2d76.8189!3d29.9695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDU4JzEwLjIiTiA3NsKwNDknMDguMCJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin&q=SCF+35+Urban+Estate+Huda+Market+Kurukshetra+Sector+13"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.0!2d76.8561!3d29.9708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDU4JzE0LjciTiA3NsKwNTEnMjIuMCJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
               width="100%" height="100%"
               style={{ border: 0, display: "block", filter: "invert(0.88) hue-rotate(195deg) saturate(0.7)" }}
               allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"
@@ -676,7 +676,7 @@ export default function ContactPage() {
                 <Send size={15} /> Enroll on WhatsApp
               </a>
               <a
-                href="tel:08460550391"
+                href="tel:9817717665"
                 style={{
                   display: "inline-flex", alignItems: "center", gap: 8,
                   border: "1px solid rgba(255,255,255,0.18)", background: "rgba(255,255,255,0.04)",

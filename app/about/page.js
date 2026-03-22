@@ -159,7 +159,7 @@ export default function AboutPage() {
       {/* ── HERO ── */}
       <section
         id="about-hero"
-        className="relative flex flex-col items-center justify-center min-h-[72vh] px-6 pt-20 pb-16 overflow-hidden"
+        className="relative flex flex-col items-center justify-center min-h-[72vh] px-6 pt-36 pb-16 overflow-hidden"
       >
         {/* Noise texture */}
         <div
