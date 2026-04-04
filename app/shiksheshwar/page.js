@@ -78,16 +78,16 @@ export default function ShiksheshwarPage() {
     { val: "11",  label: "Glorious Years"     },
     { val: "₹1",  label: "Top 10 Course Fee"  },
     { val: "80%", label: "Max Scholarship"     },
-    { val: "5+",  label: "Student Categories"  },
+    { val: "2000+",  label: "Student Enrolled last year in Scholarship exam"  },
   ];
 
   return (
     <div
       className="overflow-x-hidden text-white"
-      style={{ fontFamily: "'Syne', sans-serif", background: "#0B0B1A", minHeight: "100vh" }}
+      style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", background: "#0B0B1A", minHeight: "100vh" }}
     >
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
         * { box-sizing: border-box; }
         body { margin: 0; }
         ::selection { background: #7C3AED; color: #fff; }
@@ -144,12 +144,12 @@ export default function ShiksheshwarPage() {
           box-shadow: 0 4px 24px rgba(244,63,94,0.45);
           transition: transform 0.2s, box-shadow 0.2s;
           border: none; cursor: pointer;
-          font-family: 'Syne', sans-serif; font-weight: 700; color: white;
+          font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; color: white;
         }
         .cta-btn:hover { transform: translateY(-2px) scale(1.03); box-shadow: 0 8px 36px rgba(244,63,94,0.65); }
 
         .stat-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); }
-        .section-label { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); font-family: 'DM Sans', sans-serif; }
+        .section-label { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); font-family: 'Inter', sans-serif; }
         .shine-divider { height: 1px; background: linear-gradient(90deg, transparent, rgba(124,58,237,0.6), rgba(244,63,94,0.5), rgba(245,158,11,0.4), transparent); }
 
         /* ── Registration form styles ── */
@@ -161,7 +161,7 @@ export default function ShiksheshwarPage() {
           padding: 14px 16px 14px 46px;
           color: #fff;
           font-size: 0.95rem;
-          font-family: 'DM Sans', sans-serif;
+          font-family: 'Inter', sans-serif;
           outline: none;
           transition: border-color 0.25s, background 0.25s, box-shadow 0.25s;
           -webkit-appearance: none; appearance: none;
@@ -177,11 +177,20 @@ export default function ShiksheshwarPage() {
 
         .submit-btn {
           width: 100%; padding: 15px; border-radius: 14px; border: none;
-          font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1rem;
+          font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 1rem;
           color: #fff; display: flex; align-items: center; justify-content: center; gap: 10px;
           transition: transform 0.2s, box-shadow 0.2s; cursor: pointer;
         }
         .submit-btn:active { transform: scale(0.98) !important; }
+
+        /* Stat values — tabular numerals for perfect alignment */
+        .stat-value {
+          font-family: 'Plus Jakarta Sans', sans-serif;
+          font-variant-numeric: tabular-nums;
+          font-feature-settings: "tnum";
+          font-weight: 800;
+          letter-spacing: -0.02em;
+        }
 
         @media (max-width: 640px) {
           .hero-title-size { font-size: 2.2rem !important; }
@@ -218,7 +227,7 @@ export default function ShiksheshwarPage() {
 
         <motion.div style={{ y: heroY, position: "relative", zIndex: 1, maxWidth: 780, width: "100%" }}>
           <div className="fade-in-up inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-5 text-[12px]"
-            style={{ background: "rgba(245,158,11,0.12)", border: "1px solid rgba(245,158,11,0.35)", color: "#FCD34D", fontFamily: "'DM Sans',sans-serif" }}>
+            style={{ background: "rgba(245,158,11,0.12)", border: "1px solid rgba(245,158,11,0.35)", color: "#FCD34D", fontFamily: "'Inter',sans-serif" }}>
             <Flame size={13} fill="#FCD34D" />
             Celebrating 11 Glorious Years of Excellence
           </div>
@@ -235,7 +244,7 @@ export default function ShiksheshwarPage() {
               शिक्षेश्वर 2.0
             </p>
             <p className="text-[0.78rem] mt-1"
-              style={{ color: "rgba(233,213,255,0.6)", fontFamily: "'DM Sans',sans-serif", letterSpacing: "0.1em" }}>
+              style={{ color: "rgba(233,213,255,0.6)", fontFamily: "'Inter',sans-serif", letterSpacing: "0.1em" }}>
               SCHOLARSHIP CUM ADMISSION TEST
             </p>
           </div>
@@ -246,7 +255,7 @@ export default function ShiksheshwarPage() {
           </p>
 
           <p className="fade-in-up mb-8 mx-auto leading-[1.7]"
-            style={{ fontSize: "clamp(0.88rem,1.7vw,1.05rem)", color: "rgba(255,255,255,0.5)", maxWidth: 540, fontFamily: "'DM Sans',sans-serif" }}>
+            style={{ fontSize: "clamp(0.88rem,1.7vw,1.05rem)", color: "rgba(255,255,255,0.5)", maxWidth: 540, fontFamily: "'Inter',sans-serif" }}>
             Whole Year Course at just{" "}
             <span className="font-extrabold gradient-text-gold">₹1</span>{" "}
             for Top 10 Students — Scholarship Cum Admission Test Announcement
@@ -260,7 +269,7 @@ export default function ShiksheshwarPage() {
             </a>
             <a href="tel:9817717665">
               <button className="px-8 py-3.5 rounded-full font-semibold text-[15px] text-white inline-flex items-center gap-2"
-                style={{ border: "1px solid rgba(255,255,255,0.18)", background: "rgba(255,255,255,0.04)", fontFamily: "'Syne',sans-serif", cursor: "pointer" }}>
+                style={{ border: "1px solid rgba(255,255,255,0.18)", background: "rgba(255,255,255,0.04)", fontFamily: "'Plus Jakarta Sans',sans-serif", cursor: "pointer" }}>
                 <Phone size={15} /> Call Now
               </button>
             </a>
@@ -269,8 +278,8 @@ export default function ShiksheshwarPage() {
           <div className="fade-in-up stats-grid grid gap-3" style={{ gridTemplateColumns: "repeat(4,1fr)" }}>
             {stats.map((s, i) => (
               <div key={i} className="stat-card rounded-2xl px-4 py-3 text-center">
-                <div className="font-extrabold" style={{ fontSize: "clamp(1.1rem,2.5vw,1.5rem)", color: "#F59E0B" }}>{s.val}</div>
-                <div className="text-[11px] mt-0.5" style={{ color: "rgba(255,255,255,0.4)", fontFamily: "'DM Sans',sans-serif" }}>{s.label}</div>
+                <div className="stat-value" style={{ fontSize: "clamp(1.1rem,2.5vw,1.5rem)", color: "#F59E0B" }}>{s.val}</div>
+                <div className="text-[11px] mt-0.5" style={{ color: "rgba(255,255,255,0.4)", fontFamily: "'Inter',sans-serif" }}>{s.label}</div>
               </div>
             ))}
           </div>
@@ -290,13 +299,13 @@ export default function ShiksheshwarPage() {
           <h2 className="font-extrabold mb-4" style={{ fontSize: "clamp(1.8rem,4vw,2.8rem)", letterSpacing: "-0.02em" }}>
             For Students Studying In
           </h2>
-          <p className="mb-10" style={{ color: "rgba(255,255,255,0.45)", fontFamily: "'DM Sans',sans-serif", fontSize: "0.98rem" }}>
+          <p className="mb-10" style={{ color: "rgba(255,255,255,0.45)", fontFamily: "'Inter',sans-serif", fontSize: "0.98rem" }}>
             Open to students across all these academic levels
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {classes.map((cls, i) => (
               <motion.div key={i} className="class-pill rounded-full px-6 py-2.5 font-semibold text-[0.92rem] cursor-default"
-                style={{ color: "rgba(255,255,255,0.8)", fontFamily: "'DM Sans',sans-serif" }}
+                style={{ color: "rgba(255,255,255,0.8)", fontFamily: "'Inter',sans-serif" }}
                 whileHover={{ scale: 1.07 }} whileTap={{ scale: 0.97 }}>
                 {cls}
               </motion.div>
@@ -323,7 +332,7 @@ export default function ShiksheshwarPage() {
             <h2 className="font-extrabold mb-3" style={{ fontSize: "clamp(1.8rem,4vw,2.8rem)", letterSpacing: "-0.02em" }}>
               Your <span className="gradient-text">Advantages</span>
             </h2>
-            <p style={{ color: "rgba(255,255,255,0.4)", fontFamily: "'DM Sans',sans-serif" }}>
+            <p style={{ color: "rgba(255,255,255,0.4)", fontFamily: "'Inter',sans-serif" }}>
               Unmatched benefits designed to accelerate your academic journey
             </p>
           </div>
@@ -337,7 +346,7 @@ export default function ShiksheshwarPage() {
                 </div>
                 <div>
                   <div className="font-bold text-[0.97rem] text-white">{adv.text}</div>
-                  <div className="text-[0.8rem] mt-0.5" style={{ color: "rgba(255,255,255,0.38)", fontFamily: "'DM Sans',sans-serif" }}>{adv.sub}</div>
+                  <div className="text-[0.8rem] mt-0.5" style={{ color: "rgba(255,255,255,0.38)", fontFamily: "'Inter',sans-serif" }}>{adv.sub}</div>
                 </div>
               </motion.div>
             ))}
@@ -353,12 +362,10 @@ export default function ShiksheshwarPage() {
         className="relative px-5 py-24 overflow-hidden"
         style={{ background: "linear-gradient(180deg,#0D0D20 0%,#0B0B1A 100%)" }}
       >
-        {/* Ambient glow */}
         <div className="absolute top-1/2 left-1/2 w-[600px] h-[600px] rounded-full pointer-events-none"
           style={{ transform: "translate(-50%,-50%)", background: "radial-gradient(circle,rgba(124,58,237,0.09) 0%,transparent 65%)" }} />
 
         <div className="relative z-10 max-w-xl mx-auto">
-          {/* Heading */}
           <div className="text-center mb-10">
             <div className="section-label inline-block rounded-full px-4 py-1 text-[11px] tracking-[0.15em] uppercase mb-5"
               style={{ color: "rgba(255,255,255,0.35)" }}>
@@ -369,12 +376,11 @@ export default function ShiksheshwarPage() {
               Register for{" "}
               <span className="gradient-text">Shiksheshwar 2.0</span>
             </h2>
-            <p style={{ color: "rgba(255,255,255,0.45)", fontFamily: "'DM Sans',sans-serif", fontSize: "0.95rem" }}>
+            <p style={{ color: "rgba(255,255,255,0.45)", fontFamily: "'Inter',sans-serif", fontSize: "0.95rem" }}>
               Fill in the form — your details go directly to our WhatsApp.
             </p>
           </div>
 
-          {/* Card */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -390,10 +396,8 @@ export default function ShiksheshwarPage() {
               overflow: "hidden",
             }}
           >
-            {/* Top shimmer line */}
             <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 1,
               background: "linear-gradient(90deg,transparent,rgba(124,58,237,0.7),rgba(244,63,94,0.5),transparent)" }} />
-            {/* Decorative orb */}
             <div style={{ position: "absolute", top: -60, right: -60, width: 180, height: 180, borderRadius: "50%", pointerEvents: "none",
               background: "radial-gradient(circle,rgba(124,58,237,0.1) 0%,transparent 70%)" }} />
 
@@ -409,7 +413,7 @@ export default function ShiksheshwarPage() {
                   <CheckCircle size={32} color="#10B981" />
                 </div>
                 <h3 style={{ fontWeight: 800, fontSize: "clamp(1.2rem,4vw,1.5rem)", marginBottom: 8 }}>Registered!</h3>
-                <p style={{ color: "rgba(255,255,255,0.5)", fontFamily: "'DM Sans',sans-serif", fontSize: "0.95rem" }}>
+                <p style={{ color: "rgba(255,255,255,0.5)", fontFamily: "'Inter',sans-serif", fontSize: "0.95rem" }}>
                   Your registration has been sent to our WhatsApp. We'll be in touch shortly!
                 </p>
               </motion.div>
@@ -508,7 +512,7 @@ export default function ShiksheshwarPage() {
                   Register via WhatsApp
                 </motion.button>
 
-                <p style={{ textAlign: "center", fontSize: "0.72rem", color: "rgba(255,255,255,0.22)", fontFamily: "'DM Sans',sans-serif" }}>
+                <p style={{ textAlign: "center", fontSize: "0.72rem", color: "rgba(255,255,255,0.22)", fontFamily: "'Inter',sans-serif" }}>
                   * Required fields. Opens WhatsApp with your details pre-filled.
                 </p>
               </div>
@@ -532,18 +536,18 @@ export default function ShiksheshwarPage() {
             <div className="absolute -top-10 -right-10 text-[200px] opacity-[0.04] leading-none select-none font-extrabold">₹</div>
 
             <div className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-5 text-[12px]"
-              style={{ background: "rgba(245,158,11,0.15)", border: "1px solid rgba(245,158,11,0.4)", color: "#FCD34D", fontFamily: "'DM Sans',sans-serif" }}>
+              style={{ background: "rgba(245,158,11,0.15)", border: "1px solid rgba(245,158,11,0.4)", color: "#FCD34D", fontFamily: "'Inter',sans-serif" }}>
               <Trophy size={12} fill="#FCD34D" />
               Top 10 Students Exclusive
             </div>
 
-            <div className="font-extrabold gradient-text-gold mb-2" style={{ fontSize: "clamp(3.5rem,12vw,7rem)", lineHeight: 1 }}>
+            <div className="stat-value gradient-text-gold mb-2" style={{ fontSize: "clamp(3.5rem,12vw,7rem)", lineHeight: 1 }}>
               ₹1
             </div>
             <div className="font-bold text-white mb-3" style={{ fontSize: "clamp(1.1rem,3vw,1.6rem)" }}>
               Whole Year Course Fee
             </div>
-            <p className="mb-8" style={{ color: "rgba(255,255,255,0.45)", fontFamily: "'DM Sans',sans-serif", fontSize: "0.95rem", maxWidth: 400, margin: "0 auto 2rem" }}>
+            <p className="mb-8" style={{ color: "rgba(255,255,255,0.45)", fontFamily: "'Inter',sans-serif", fontSize: "0.95rem", maxWidth: 400, margin: "0 auto 2rem" }}>
               The top 10 performers in Shiksheshwar 2.0 unlock an entire year of premium coaching at just ₹1. Prove your potential and claim your spot.
             </p>
 
@@ -576,8 +580,8 @@ export default function ShiksheshwarPage() {
                   <Phone size={18} />
                 </div>
                 <div className="text-left">
-                  <div className="text-[11px] mb-0.5" style={{ color: "rgba(255,255,255,0.35)", fontFamily: "'DM Sans',sans-serif", letterSpacing: "0.08em" }}>CALL US</div>
-                  <div className="font-bold text-white text-[1rem]">+91 98177 17665</div>
+                  <div className="text-[11px] mb-0.5" style={{ color: "rgba(255,255,255,0.35)", fontFamily: "'Inter',sans-serif", letterSpacing: "0.08em" }}>CALL US</div>
+                  <div className="font-bold text-white text-[1rem]" style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontVariantNumeric: "tabular-nums" }}>+91 98177 17665</div>
                 </div>
               </motion.div>
             </a>
@@ -588,7 +592,7 @@ export default function ShiksheshwarPage() {
                   <Mail size={18} />
                 </div>
                 <div className="text-left">
-                  <div className="text-[11px] mb-0.5" style={{ color: "rgba(255,255,255,0.35)", fontFamily: "'DM Sans',sans-serif", letterSpacing: "0.08em" }}>EMAIL US</div>
+                  <div className="text-[11px] mb-0.5" style={{ color: "rgba(255,255,255,0.35)", fontFamily: "'Inter',sans-serif", letterSpacing: "0.08em" }}>EMAIL US</div>
                   <div className="font-bold text-white text-[0.8rem]">aminstituteofexcellence1@gmail.com</div>
                 </div>
               </motion.div>
@@ -603,7 +607,7 @@ export default function ShiksheshwarPage() {
                 <ArrowRight size={16} />
               </button>
             </a>
-            <p className="mt-4 text-[12px]" style={{ color: "rgba(255,255,255,0.25)", fontFamily: "'DM Sans',sans-serif" }}>
+            <p className="mt-4 text-[12px]" style={{ color: "rgba(255,255,255,0.25)", fontFamily: "'Inter',sans-serif" }}>
               * Scholarship percentage subject to test performance. Terms apply.
             </p>
           </div>

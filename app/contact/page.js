@@ -311,7 +311,7 @@ export default function ContactPage() {
             {[
               { val: "500+", label: "Students Enrolled", color: "#F97316" },
               { val: "6–12", label: "Classes Covered",   color: "#0EA5E9" },
-              { val: "3+",   label: "Years of Excellence", color: "#7C3AED" },
+              { val: "11+",   label: "Years of Excellence", color: "#7C3AED" },
               { val: "95%",  label: "Success Rate",       color: "#F59E0B" },
             ].map((s, i) => (
               <div key={i} className="stagger-card stat-badge">
@@ -409,9 +409,9 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p style={{ fontSize: 10, letterSpacing: "0.12em", color: "rgba(255,255,255,0.35)", fontFamily: "'DM Sans',sans-serif", marginBottom: 3 }}>TIMINGS</p>
-                    <p style={{ fontWeight: 600, fontSize: "clamp(0.85rem,2.2vw,0.93rem)", color: "#fff", fontFamily: "'DM Sans',sans-serif" }}>Monday – Saturday</p>
+                    <p style={{ fontWeight: 600, fontSize: "clamp(0.85rem,2.2vw,0.93rem)", color: "#fff", fontFamily: "'DM Sans',sans-serif" }}>Schedule</p>
                     <p style={{ fontSize: "0.78rem", color: "rgba(255,255,255,0.4)", fontFamily: "'DM Sans',sans-serif", marginTop: 2 }}>
-                      Morning: 7 AM – 12 PM &nbsp;|&nbsp; Evening: 3 PM – 8 PM
+                      Monday-Saturday 9 AM – 6 PM &nbsp;|&nbsp; Sunday: 9 AM – 2 PM
                     </p>
                     <p style={{ fontWeight: 600, fontSize: "0.8rem", color: "#F59E0B", fontFamily: "'DM Sans',sans-serif", marginTop: 4 }}>
                       Scholarship Test: Every 2nd Sat & 4th Sun
