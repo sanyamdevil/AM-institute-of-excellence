@@ -315,7 +315,7 @@ export default function ContactPage() {
               { val: "95%",  label: "Success Rate",       color: "#F59E0B" },
             ].map((s, i) => (
               <div key={i} className="stagger-card stat-badge">
-                <div style={{ fontWeight: 800, fontSize: "clamp(1.2rem,4.5vw,1.65rem)", color: s.color, marginBottom: 4 }}>{s.val}</div>
+<div style={{ fontWeight: 800, fontSize: "clamp(1.2rem,4.5vw,1.65rem)", color: s.color, marginBottom: 4, fontFamily: "'DM Sans', sans-serif", fontVariantNumeric: "normal", fontFeatureSettings: "'sups' 0, 'ordn' 0" }}>{s.val}</div>
                 <div style={{ fontSize: "clamp(0.65rem,1.8vw,0.76rem)", color: "rgba(255,255,255,0.4)", fontFamily: "'DM Sans',sans-serif", letterSpacing: "0.04em" }}>{s.label}</div>
               </div>
             ))}

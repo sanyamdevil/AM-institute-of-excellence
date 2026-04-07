@@ -57,6 +57,8 @@ const PROGRAMS = [
       { label: "JEE Advance", icon: <Zap size={14} /> },
       { label: "NEET", icon: <Zap size={14} /> },
       { label: "CUET", icon: <Zap size={14} /> },
+      { label: "Govt Exams", icon: <Zap size={14} /> },
+
     ],
   },
 ];
